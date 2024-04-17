@@ -8,11 +8,14 @@ The objective of this assignment is to extract textual data articles from the gi
     >  output  >  Output Data Structure.csv
     >  text file  >  all the extracted artical in txt file
   
-    
-# Data Extraction
+#Solution
 To extract data from each artile given in the input.xlsx file ,save each aritle in a text file and save those data into csv file to do this i created a class data data ingestion in it used pandas ,requests , BeautifulSoup for data crawaling 
 then by using soup extracted only title and the body text . extracting title just used find title tag and extract text but for text have to inspect the class for the text .all the url wasn't have same body tag so then i created a differnt list and save all urls who text aren't extracted and then by inspecting the webpage of the article i found a differnt body tag then extract and merge all article in a csv and save all article in txt foramt in data folder 
 
+#To generate output
+
+    run pipeline.py  to generate the all txt file , all article in one csv file and
+    a output.csv in output file with all results
 
 #output
 
